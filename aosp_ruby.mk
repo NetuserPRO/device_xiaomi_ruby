@@ -1,5 +1,6 @@
+
 #
-# Copyright (C) 2023 The LineageOS Project
+# Copyright (C) 2023 The Android Open Source Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -11,10 +12,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile.
 $(call inherit-product, device/xiaomi/ruby/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common AOSP stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_ruby
+PRODUCT_NAME := aosp_ruby
 PRODUCT_DEVICE := ruby
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
